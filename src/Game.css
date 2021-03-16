@@ -8,15 +8,18 @@
 }
 
 .Cell {
-    background: #ccc;
+    background: rgb(29, 201, 72);
     position: absolute;
 }
 
 .controls {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .button {
     margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
