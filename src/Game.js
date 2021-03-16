@@ -182,10 +182,6 @@ class Game extends React.Component {
                         <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" value={this.state.interval} onChange={this.handleIntervalChange} />
                         <span className="input-group-text" id="basic-addon3">MilliSeconds</span>
                     </div>
-                    {isRunning ?
-                        <button className="button btn btn-primary" onClick={this.stopGame}>Stop</button> :
-                        <button className="button btn btn-primary" onClick={this.runGame}>Run</button>
-                    }
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Choose Pattern
@@ -200,6 +196,10 @@ class Game extends React.Component {
                             <button className="button btn btn-primary" onClick={() => this.handlePattern(pentadecathlon)}>Penta Decathlon</button>
                         </div>
                     </div>
+                    {isRunning ?
+                        <button className="button btn btn-primary" onClick={this.stopGame}>Stop</button> :
+                        <button className="button btn btn-primary" onClick={this.runGame}>Run</button>
+                    }
                     <button className="button btn btn-primary" onClick={this.handleClear}>Clear</button>
                 </div>
                 <br></br>
