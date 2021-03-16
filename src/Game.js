@@ -137,6 +137,7 @@ class Game extends React.Component {
     }
 
     handleClear = () => {
+        this.stopGame()
         this.board = this.makeEmptyBoard();
         this.setState({ cells: this.makeCells() });
     }
